@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="./css/all.css">
+  <!-- 自己的外部樣式 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- 1. 設定 swiper 的 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <title>Template RWD 網站</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- -------- 固定資訊列_top -------- -->
+    <div class="top">
+      <!-- 資訊列 -->
+      <div class="row_top">
+        <div class="col" id="top_btn_hamburger">
+          <!-- 調整hamburger menu大小>fa-lg -->
+          <button id="btn_hamburger"><i class="fa-solid fa-bars fa-2xl"></i></button>
+        </div>
+
+        <div class="col" id="top_logo_img">
+          <img src="./images/logo-default-197x54.png">
+        </div>
+
+        <div id="top_col3" class="col">
+          <ul>
+            <li><i class="fa-regular fa-clock" style="color: #ffc107;"></i></li>
+            <li>09:00AM — 05:00PM </li>
+          </ul>
+          <ul>
+            <li> <i class="fa-solid fa-phone" style="color: #ffc107;"></i></li>
+            <li>+1 323-913-4688</li>
+          </ul>
+          <div id="top_btn">
+            <a href="#"><span>BOOK NOW</span></a>
+          </div>
+        </div>
+
+        <div id="top_col4" class="col">
+          <button>
+            <i id="icon-elli" class="fa-solid fa-ellipsis-vertical fa-2xl"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 按下漢堡後出現的側邊攔 -->
+    <div class="top_sidebar displayOff">
+      <div id="sidebar" class="sidebar">
+        <ul id="sidebar_icons">
+          <li>
+            <i class="fa-brands fa-facebook-f" style=" color: #000;"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-twitter" style=" color: #000;"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-google-plus-g" style=" color: #000;"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-instagram" style=" color: #000;"></i>
+          </li>
+        </ul>
+        <hr>
+        <ul id="sidebar_menu">
+          <li><a href="#"> HOME</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Pages</a></li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <!-- -------- 主要內容區_content ------ -->
+    <div class="content">
+      <!-- 大圖輪播 -->
+      <div class="slider_content">
+        <!-- 3. 設定 swiper 的結構 Slider main container -->
+        <div id="pageHeader" class="swiper">
+          <!-- 輪播圖主體 -->
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides 播放的圖片 -->
+            <div id="swiper-slide1" class="swiper-slide">
+              <img src="./images/pageHeader1.jpg">
+              <div class="pageHeader_text">
+                <h6>WELCOME TO VISIT HOSTEL</h6>
+                <p>
+                  A SPECIAL PLACE WHERE
+                  YOU CAN STAY AND RELAX
+                </p>
+                <div id="pageHeader_btn">
+                  <a href="#"><span>BOOK NOW</span></a>
+                </div>
+              </div>
+            </div>
+            <div id="swiper-slide2" class="swiper-slide">
+              <img src="./images/pageHeader2.jpg">
+              <div class="pageHeader_text">
+                <h6>SERVING TRAVELERS ON A BUDGET</h6>
+                <p>
+                  WE PROVIDE COMFORTABLE
+                  ACCOMMODATION FOR YOU
+                </p>
+                <div id="pageHeader_btn">
+                  <a href="#"><span>BOOK NOW</span></a>
+                </div>
+              </div>
+            </div>
+            <div id="swiper-slide3" class="swiper-slide">
+              <img src="./images/pageHeader3.jpg">
+              <div class="pageHeader_text">
+                <h6>A PERFECT AND AFFORDABLE PLACE TO STAY</h6>
+                <p>
+                  TAKE ADVANTAGE OF THE
+                  BUDGET
+                  ORIENTED ACCOMMODATION
+                </p>
+                <div id="pageHeader_btn">
+                  <a href="#"><span>BOOK NOW</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 分頁 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- 主要特色_三格方塊 -->
+      <div class="feature_content">
+        <div class="f_contbox">
+          <div class="box1">
+            <div class="f_contbox_img"><img src="./images/map.png"></div>
+            <a href="#">MAP & DIRECTIONS</a>
+            <p>
+              Our hostel is located in the downtown and not too far from airport and bus station so it is quite easy
+              to find us wherever you come from.
+            </p>
+          </div>
+          <div class="box2">
+            <div class="f_contbox_img"><img src="./images/home.png"></div>
+            <a href="#">ACCOMMODATION SERVICES </a>
+            <p>
+              Visit Hostel provides high-quality accommodation services to clients that come to our city from all over
+              the world throughout the year.
+            </p>
+          </div>
+          <div class="box3">
+            <div class="f_contbox_img"><img src="images/star.png"></div>
+            <a href="#">GREAT EXPERIENCE</a>
+            <p>
+              With qualified and friendly staff and high level of comfort, we are sure you will have a great experience
+              of staying at the Visit Hostel.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 最推薦商品-->
+      <div class="recommendHostel">
+        <div class="recom_img">
+          <img src="./images/besthotel.jpg">
+        </div>
+        <div class="recom_text">
+          <h2>BEST CITY HOSTEL</h2>
+          <div class="mytab">
+            <label for="recom_tab1">ABOUT US</label>
+            <label for="recom_tab2">WHY CHOOSE US</label>
+            <label for="recom_tab3">OUR MISSION</label>
+          </div>
+          <div class="recom_cotent">
+            <input id="recom_tab1" type="radio" name="recom" checked>
+            <input id="recom_tab2" type="radio" name="recom">
+            <input id="recom_tab3" type="radio" name="recom">
+            <p class="recom_p1">ur hostel was founded in 2008 to provide travelers on a budget from all over the world
+              with affordable yet highly comfortable accommodation that they could enjoy.</p>
+            <p class="recom_p2">We are one of the most popular hostels for the guests of our city. Our hostel was
+              awarded
+              the
+              “Best US
+              Hostel” in 2022 for the unique approach to our clients and visitors.</p>
+            <p class="recom_p3">Our mission is to promote a dynamic community of global citizens who have the wisdom and
+              humanity to actively
+              make the world a better place for everyone.</p>
+          </div>
+
+          <div class="recom_btns">
+            <div id="recom_btn1">
+              <a href="#"><span>GET IN TOUCH</span></a>
+            </div>
+
+            <div id="recom_btn2">
+              <a href="#"><span>READ MORE ABOUT ME</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ourGallrey -->
+      <div class="ourGallrey">
+        <h2>OUR GALLERY</h2>
+        <div class="ourgal_img_group">
+          <div id="ourgallery1" class="gal_img"><img src="./images/ourgallery1.jpg"></div>
+          <div id="ourgallery2" class="gal_img"><img src="./images/ourgallery2.jpg"></div>
+          <div id="ourgallery3" class="gal_img"><img src="./images/ourgallery3.jpg"></div>
+          <div id="ourgallery4" class="gal_img"><img src="./images/ourgallery4.jpg"></div>
+          <div id="ourgallery5" class="gal_img"><img src="./images/ourgallery5.jpg"></div>
+          <div id="ourgallery6" class="gal_img"><img src="./images/ourgallery6.jpg"></div>
+        </div>
+      </div>
+
+      <!-- 成員欄 -->
+      <div class="ourTeam">
+        <h2>OUR TEAM</h2>
+        <div class="member_group">
+          <div class="member">
+            <article class="quote-creative">
+              <a class="quote-creative-figure" href="#"><img src="./images/team1.jpg"></a>
+              <h5 class="quote-creative-text"><a href="#">SAM ROBINSON</a> </h5>
+              <p>Founder</p>
+              <h6 class="quote-creative-cite"><a href="#"> +1 323-913-4688</a></h6>
+            </article>
+          </div>
+          <div class="member">
+            <article class="quote-creative">
+              <a class="quote-creative-figure" href="#"><img src="./images/team2.jpg"></a>
+              <h5 class="member-text"><a href="#">LAUREEN GRANT</a> </h5>
+              <p>Receptionist</p>
+              <h6 class="quote-creative-cite"><a href="#"> +1 323-913-4688</a></h6>
+            </article>
+          </div>
+          <div class="member">
+            <article class="quote-creative">
+              <a class="quote-creative-figure" href="#"><img src="./images/team3.jpg"></a>
+              <h5 class="quote-creative-text"><a href="#">JILL PETERSON</a> </h5>
+              <p>Waitress</p>
+              <h6 class="quote-creative-cite"><a href="#">+1 323-913-4688</a></h6>
+            </article>
+          </div>
+          <div class="member">
+            <article class="quote-creative">
+              <a class="quote-creative-figure" href="#"><img src="./images/team4.jpg"></a>
+              <h5 class="quote-creative-text"><a href="#">OLIVIA SMITH</a> </h5>
+              <p>Room Attendant</p>
+              <h6 class="quote-creative-cite"><a href="#"> +1 323-913-4688</a></h6>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- WHAT WE OFFER -->
+      <div class="offer">
+        <h2>WHAT WE OFFER</h2>
+        <div class="offer_box_group">
+          <div class="offer_box">
+            <div class="offer_img"><img src="./images/coffee.png"></div>
+            <h6><a href="#">TEA & COFFEE</a></h6>
+            <p>You can always have some hot coffee & tea in our kitchen, available to all our clients.</p>
+          </div>
+          <div class="offer_box">
+            <div class="offer_img"><img src="./images/showerl.png"></div>
+            <h6><a href="#">HOT SHOWERS</a></h6>
+            <p>Visit Hostel is famous for clean and hot showers that you can have at any time of the day.</p>
+          </div>
+          <div class="offer_box">
+            <div class="offer_img"><img src="./images/laundry.png"></div>
+            <h6><a href="#">LAUNDRY</a></h6>
+            <p>Need to quickly wash your clothes? Our laundry is always at your service.</p>
+          </div>
+          <div class="offer_box">
+            <div class="offer_img"><img src="./images/snowflake.png"></div>
+            <h6><a href="#">AIR CONDITIONING</a></h6>
+            <p>All rooms at our hostel are equipped with reliable air conditioner systems.</p>
+          </div>
+          <div class="offer_box">
+            <div class="offer_img"><img src="./images/wifi.png"></div>
+            <h6><a href="#">FREE WI-FI</a></h6>
+            <p>Our hostel is equipped with free high-speed Wi-Fi that is available 24/7 in all rooms.</p>
+          </div>
+          <div class="offer_box">
+            <div class="offer_img"><img src="./images/kitchen.png"></div>
+            <h6><a href="#">KITCHEN</a></h6>
+            <p>Our kitchen provides a wide range of daily fresh and tasty meals to our clients.</p>
+          </div>
+          <div class="offer_box">
+            <div class="offer_img"><img src="./images/plug.png"></div>
+            <h6><a href="#">IRONING</a></h6>
+            <p>Use our ironing services to quickly made your clothes look splendid after laundry.</p>
+          </div>
+          <div class="offer_box">
+            <div class="offer_img"><img src="./images/LOCKERS.png"></div>
+            <h6><a href="#">LOCKERS</a></h6>
+            <p>If you carry any valuable items, feel free to store them in our hostel’s lockers.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SAVE CASH FOR FUN-->
+      <div class="saveCash">
+        <h2>SAVE CASH FOR FUN</h2>
+        <p>With our hostel, you can save a lot of money on accommodation throughout the year to enjoy your stay at our
+          city.</p>
+        <div id="btn">
+          <span><a href="#"> LEARN MORE</a></span>
+        </div>
+      </div>
+
+      <!-- OUR ROOMS -->
+      <div class="ourRooms">
+        <h2>OUR ROOMS</h2>
+        <div class="room">
+          <div class="room_header">
+            <img src="./images/ourRoom1.jpg">
+          </div>
+          <div class="room_text">
+            <h4><a href=" #">DOUBLE ROOM (PRIVATE)</a></h4>
+            <span>
+              <i class="fa-solid fa-star fa-xs" style="color: rgb(255, 208, 0);"></i>
+              <i class="fa-solid fa-star fa-xs" style="color: rgb(255, 208, 0);"></i>
+              <i class="fa-solid fa-star fa-xs" style="color: rgb(255, 208, 0);"></i>
+              <i class="fa-solid fa-star fa-xs" style="color: rgb(255, 208, 0);"></i>
+              <i class="fa-solid fa-star-half-stroke fa-xs" style="color: rgb(255, 208, 0);"></i>
+            </span>
+            <span><a href=" #"> 4 CUSTOMER REVIEWS</a></span>
+            <p>
+              Double room is one of the most popular choices at Visit Hostel. It includes one double bed with
+              comfortable mattresses and bed linen, WC, and a TV set.
+            </p>
+            <div id="btn">
+              <span>MORE INFO</span>
+            </div>
+          </div>
+        </div>
+        <div class="room">
+          <div class="room_header">
+            <img src="./images/ourRoom2.jpg">
+          </div>
+          <div class="room_text">
+            <h4><a href=" #">DOUBLE ROOM (PRIVATE)</a></h4>
+            <span>
+              <i class="fa-solid fa-star fa-xs" style="color: rgb(255, 208, 0);"></i>
+              <i class="fa-solid fa-star fa-xs" style="color: rgb(255, 208, 0);"></i>
+              <i class="fa-solid fa-star fa-xs" style="color: rgb(255, 208, 0);"></i>
+              <i class="fa-solid fa-star fa-xs" style="color: rgb(255, 208, 0);"></i>
+              <i class="fa-solid fa-star-half-stroke fa-xs" style="color: rgb(255, 208, 0);"></i>
+            </span>
+            <span><a href=" #"> 4 CUSTOMER REVIEWS</a></span>
+            <p>
+              Double room is one of the most popular choices at Visit Hostel. It includes one double bed with
+              comfortable mattresses and bed linen, WC, and a TV set.
+            </p>
+            <div id="btn">
+              <span>MORE INFO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- customer feedback -->
+      <div class="feedback">
+        <h2>WHAT PEOPLE SAY</h2>
+        <div class="customer_group">
+          <div class="customer">
+            <article class="quote-creative">
+              <a class="quote-creative-figure" href="#"><img src="./images/feedback1.jpg"></a>
+              <div class="quote-creative-text">
+                I had a fantastic experience at this hostel; I was very impressed with the receptionists and
+                housekeeping
+                staff. Laureen was especially helpful during checking out after a busy week. </div>
+              <h5 class="quote-creative-cite"><a href="#">JANR WOOD</a></h5>
+            </article>
+          </div>
+          <div class="customer">
+            <article class="quote-creative">
+              <a class="quote-creative-figure" href="#"><img src="./images/feedback2.jpg"></a>
+              <div class="quote-creative-text">
+                The staff was wonderful! We had a very fun time in the city. I can't say enough nice things about the
+                staff. They were all very pleasant and accommodating. We look forward to coming back here again. </div>
+              <h5 class="quote-creative-cite"><a href="#">CATHERINE WILLIAMS</a></h5>
+            </article>
+          </div>
+          <div class="customer">
+            <article class="quote-creative">
+              <a class="quote-creative-figure" href="#"><img src="./images/feedback3.jpg"></a>
+              <div class="quote-creative-text">
+                Just want to say thank you and tell you how much my group of young people enjoyed the hostel this week.
+                The staff was so very helpful and friendly. Thank you for all your help and assistance during our stay.
+              </div>
+              <h5 class="quote-creative-cite"><a href="#">ERICA PETERSON</a></h5>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- MORE THAN 10 YEARS OF FOLLOWING THE DREAM -->
+      <div class="followingTheDream">
+        <h2>MORE THAN 10 YEARS OF FOLLOWING THE DREAM</h2>
+        <div class="dream_card_group">
+          <div class="dream_card">
+            <span>12</span>
+            <p>AWARDS</p>
+          </div>
+          <div class="dream_card">
+            <span>650</span>
+            <p>GUESTS</p>
+          </div>
+          <div class="dream_card">
+            <span>1K</span>
+            <p>CUPS OF COFFEE</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- DISCOUNT -->
+      <div class="discount">
+        <h2>SIGN UP FOR 25% DISCOUNT</h2>
+        <p>Want to get an instant discount for your stay at our hostel? Leave your email and sign up for our
+          newsletter
+          with 25% off all our rooms.</p>
+        <div class="discount_input_n_btn">
+          <div class="discount_input"><input type="text" placeholder="Enter your Email"></div>
+          <div id="btn">
+            <span>subscribe</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LATEST BLOG POSTS -->
+      <div class="blogPost">
+        <h2>LATEST BLOG POSTS </h2>
+        <!-- 3. 設定 swiper 的結構 Slider main container -->
+        <div id="blogPost_swiper" class="swiper">
+          <!-- 輪播圖主體 -->
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides 播放的圖片 -->
+            <div class="swiper-slide">
+              <div class="blogHeader_box">
+                <div class="blogHeader">
+                  <img src="./images/blogPost1.jpg">
+                </div>
+              </div>
+
+              <div class="blogText">
+                <a href="#">HOW TO SAVE A LOT WHEN TRAVELING WORLDWIDE</a>
+                <h5> MAY 17, 2022</h5>
+                <ul class="blogPost_ul displayOff">
+                  <li>
+                    <i class="fa-brands fa-facebook-f" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-twitter" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-google-plus-g" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-instagram" style=" color: #fff;"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blogHeader_box">
+                <div class="blogHeader">
+                  <img src="./images/blogPost2.jpg">
+                </div>
+              </div>
+
+              <div class="blogText">
+                <a href="#">BEST DAYS TO STAY IN LOS ANGELES</a>
+                <h5>MAY 17, 2022</h5>
+                <ul class="blogPost_ul displayOff">
+                  <li>
+                    <i class="fa-brands fa-facebook-f" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-twitter" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-google-plus-g" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-instagram" style=" color: #fff;"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blogHeader_box">
+                <div class="blogHeader">
+                  <img src="./images/blogPost1.jpg">
+                </div>
+              </div>
+
+              <div class="blogText">
+                <a href="#">HOW TO SAVE A LOT WHEN TRAVELING WORLDWIDE</a>
+                <h5> MAY 17, 2022</h5>
+                <ul class="blogPost_ul displayOff">
+                  <li>
+                    <i class="fa-brands fa-facebook-f" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-twitter" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-google-plus-g" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-instagram" style=" color: #fff;"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blogHeader_box">
+                <div class="blogHeader">
+                  <img src="./images/blogPost2.jpg">
+                </div>
+              </div>
+
+              <div class="blogText">
+                <a href="#">BEST DAYS TO STAY IN LOS ANGELES</a>
+                <h5>MAY 17, 2022</h5>
+                <ul class="blogPost_ul displayOff">
+                  <li>
+                    <i class="fa-brands fa-facebook-f" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-twitter" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-google-plus-g" style=" color: #fff;"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-instagram" style=" color: #fff;"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 分頁 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- GALLERY -->
+      <div class="gallery">
+        <h2>GALLERY</h2>
+        <!-- 3. 設定 swiper 的結構 Slider main container -->
+        <div id="ww_gallery" class="swiper">
+          <!-- 輪播圖主體 -->
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides 播放的圖片 -->
+            <div class="swiper-slide">
+              <img src="./images/gallery1.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery2.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery3.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery4.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery5.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery6.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery7.jpg">
+            </div>
+          </div>
+          <!-- 分頁 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer_contact">
+          <div class="contactBox">
+            <h3>CONTACT US </h3>
+            <div class="info">
+              <ul>
+                <li><i class="fa-solid fa-phone" style="color:#ffc107;"></i></li>
+                <li><a href="#">+1 323-913-4688</a></li>
+              </ul>
+              <ul>
+                <li><i class="fa-solid fa-envelope" style="color:#ffc107;"></i></li>
+                <li><a href="#">info@demolink.org</a></li>
+              </ul>
+              <ul>
+                <li><i class="fa-solid fa-paper-plane" style="color:#ffc107;"></i></li>
+                <li><a href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="newsBox">
+            <h3>POPULAR NEWS</h3>
+            <div class="news">
+              <span><a href="#">Hostel or Hotel: What to Choose and Why</a></span>
+              <p>MAY 04, 2022</p>
+              <br>
+
+              <span><a href="#">Our Guide for Travelers on a Budget</a></span>
+              <p>MAY 04, 2022</p>
+            </div>
+          </div>
+
+          <div class="linkBox">
+            <h3>QUICK LINKS</h3>
+            <div class="link">
+              <ul>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Our Rooms </a></li>
+                <li><a href="#">Our Team </a></li>
+                <li><a href="#">Blog </a></li>
+                <li><a href="#">Gallery </a></li>
+              </ul>
+            </div>
+            <div class="footer_btn">
+              <div id="btn1">
+                <span>BOOK NOW</span>
+              </div>
+              <div id="btn2">
+                <span>GET IN TOUCH</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social_media">
+          <span>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+          <p>© 2022 Visit Hostel. All rights reserved</p>
+          <p><a href="#">Privacy Policy</a></p>
+        </div>
+      </div>
+
+      <!-- content -->
+    </div>
+
+    <!-- CONTAINER -->
+  </div>
+
+  <script src="./JQ/jquery-2.1.4.min.js"></script>
+  <!-- 2. 設定 swiper 的 js (套件內容要記得寫在主程式下面!!)-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    $(function () {
+      $('#BackTop').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 333);
+      });
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+          $('#BackTop').fadeIn(222);
+        } else {
+          $('#BackTop').stop().fadeOut(222);
+        }
+      }).scroll();
+    });
+    // 顯示漢堡選單內容
+    $('#btn_hamburger').on('click', function () {
+      // console.log($('.top_sidebar').classList)
+      // if ($('.top_sidebar').classList.json(includes("displayoff"))) {
+      if ($('.top_sidebar').hasClass('displayOff')) {
+        $('.top_sidebar').removeClass('displayOff').show()
+      } else {
+        $('.top_sidebar').addClass('displayOff').hide()
+      }
+    })
+
+    // hover 時出現 icons
+    $('.blogText').each(function (i) {
+      $(this).on('mouseover', function (i) {
+        $(this).children('.blogPost_ul').removeClass('displayOff')
+      })
+    })
+
+    $('.blogText').each(function () {
+      $(this).on('mouseleave', function (i) {
+        $(this).children('.blogPost_ul').addClass('displayOff')
+      })
+    })
+
+
+    // 大圖的輪播 ----------------------------
+    const pageHeader = new Swiper('#pageHeader', {
+      mousewheel: true,
+      // Optional parameters
+      direction: 'horizontal',// vertical 輪播圖呈現水平或垂直，'vertical'或是'horizontal'
+      loop: true, // true 可以循環播放
+      slidesPerView: 1, // 每次顯示幾張圖片
+      spaceBetween: 10, //圖片與圖片之間的間隔距離
+      speed: 1000, //動畫轉場持續時間
+      autoplay: {
+        delay: 3000, // 自動播放，設定幾秒播放下一張
+      },
+      // 使用斷點控制輪播圖各種屬性參數，例如哪個尺寸顯示幾張圖片，
+      breakpoints: {
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          direction: 'vertical',
+          slidesPerView: 1,
+          // spaceBetween: 10,
+        },
+      },
+      // 分頁指示器 
+      pagination: {
+        el: '.swiper-pagination',
+        // dynamicBullets: true, // 動態指示器
+        // type: 'progressbar', // 分頁指示器類型，progressbar(圖片進度條)、fraction(1/8)
+        clickable: true, // 可以點擊換圖
+        // renderBullet: function (index, className) {
+        //   return '<span class="' + className + '">' + (index + 1) + '</span>';
+        // }
+      },
+      // Navigation arrows (啟用上、下張功能)
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar (進度條)
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true, //true 只在滑動時顯示，預設 false 會顯示，改成 true 只在滑動時顯示，如果不需要直接註解 html 結構
+      },
+    });
+
+    // 不需要用到 this 所以可以用 箭頭函式
+    document.addEventListener('keydown', (e) => {
+      console.log(this)
+      if (e.key === 'ArrowLeft') pageHeader.slidePrev()
+      if (e.key === 'ArrowRight') pageHeader.slideNext();
+    })
+
+
+    // blogPost 的輪播圖 ------------------------
+    const blogPost_swiper = new Swiper('#blogPost_swiper', {
+      mousewheel: true,
+      // Optional parameters
+      direction: 'horizontal',// vertical 輪播圖呈現水平或垂直，'vertical'或是'horizontal'
+      loop: true, // true 可以循環播放
+      slidesPerView: 1, // 每次顯示幾張圖片
+      spaceBetween: 10, //圖片與圖片之間的間隔距離
+      speed: 1000, //動畫轉場持續時間
+      autoplay: {
+        delay: 3000, // 自動播放，設定幾秒播放下一張
+      },
+      // 使用斷點控制輪播圖各種屬性參數，例如哪個尺寸顯示幾張圖片，
+      breakpoints: {
+        576: {
+          slidesPerView: 1,
+        },
+        758: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+
+      // effect: "cube",
+
+      // 分頁指示器 
+      pagination: {
+        el: '.swiper-pagination',
+        // dynamicBullets: true, // 動態指示器
+        // type: 'progressbar', // 分頁指示器類型，progressbar(圖片進度條)、fraction(1/8)
+        clickable: true, // 可以點擊換圖
+        // renderBullet: function (index, className) {
+        //   return '<span class="' + className + '">' + (index + 1) + '</span>';
+        // }
+      },
+      // Navigation arrows (啟用上、下張功能)
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
+
+      // And if we need scrollbar (進度條)
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true, //true 只在滑動時顯示，預設 false 會顯示，改成 true 只在滑動時顯示，如果不需要直接註解 html 結構
+      },
+    });
+
+    // 不需要用到 this 所以可以用 箭頭函式
+    document.addEventListener('keydown', (e) => {
+      console.log(this)
+      if (e.key === 'ArrowLeft') blogPost_swiper.slidePrev()
+      if (e.key === 'ArrowRight') blogPost_swiper.slideNext();
+    })
+
+
+    // gallery 輪播圖 ----------------------------
+    const ww_gallery = new Swiper('#ww_gallery', {
+      mousewheel: true,
+      // Optional parameters
+      direction: 'horizontal',// vertical 輪播圖呈現水平或垂直，'vertical'或是'horizontal'
+      loop: true, // true 可以循環播放
+      slidesPerView: 1, // 每次顯示幾張圖片
+      spaceBetween: 0, //圖片與圖片之間的間隔距離
+      speed: 1000, //動畫轉場持續時間
+      autoplay: {
+        delay: 3000, // 自動播放，設定幾秒播放下一張
+      },
+      // 使用斷點控制輪播圖各種屬性參數，例如哪個尺寸顯示幾張圖片，
+      breakpoints: {
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        992: {
+          slidesPerView: 6,
+        },
+        1200: {
+          slidesPerView: 6,
+        },
+
+        // // Navigation arrows (啟用上、下張功能)
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+      },
+      // 分頁指示器 
+      pagination: {
+        el: '.swiper-pagination',
+        // dynamicBullets: true, // 動態指示器
+        // type: 'progressbar', // 分頁指示器類型，progressbar(圖片進度條)、fraction(1/8)
+        clickable: true, // 可以點擊換圖
+      },
+    });
+
+    // 不需要用到 this 所以可以用 箭頭函式
+    document.addEventListener('keydown', (e) => {
+      console.log(this)
+      if (e.key === 'ArrowLeft') ww_gallery.slidePrev()
+      if (e.key === 'ArrowRight') ww_gallery.slideNext();
+    })
+
+
+  </script>
+
+</body>
+
+</html>
